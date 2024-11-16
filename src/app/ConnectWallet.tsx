@@ -16,7 +16,6 @@ export default function ConnectWallet() {
     return <div className="flex flex-row flex-nowrap w-full h-[100svh] justify-center items-center">
         <div className="w-[360px]">
             <div className="cormorant-font text-[#00545D] text-3xl mb-4">Connect Wallet</div>
-            <div>{address}</div>
             <div className="flex flex-col">
                 {
                     connectors.map((connector) => (
