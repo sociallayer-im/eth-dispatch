@@ -1,11 +1,10 @@
 'use client'
 
 import WagmiWrapper from "@/app/WagmiWrapper";
-import ConnectWallet from "@/app/ConnectWallet";
+import Chat from "./Chat";
 
-export default function Home() {
+export default function ChatPage() {
     return <WagmiWrapper>
-        <ConnectWallet/>
+        <Chat />
     </WagmiWrapper>
 }
-
