@@ -61,7 +61,7 @@ export default function Chat() {
 
     return <div className="flex flex-row flex-nowrap w-full h-[100svh] justify-center items-center">
         <div className="w-[360px] bg-white min-h-[500px] rounded p-4">
-            <div className="cormorant-font text-[#00545D] text-3xl mb-4 font-semibold">@Solar.day</div>
+            <div className="cormorant-font text-[#00545D] text-3xl mb-4 font-semibold">@ETH-Dispatch</div>
 
             <div className="flex flex-col max-h-[70svh] overflow-auto">
                 {
