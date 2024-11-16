@@ -63,7 +63,7 @@ export default function Chat() {
         <div className="w-[360px] bg-white min-h-[500px] rounded p-4">
             <div className="cormorant-font text-[#00545D] text-3xl mb-4 font-semibold">@Solar.day</div>
 
-            <div className="flex flex-col max-h-[50svh] overflow-auto">
+            <div className="flex flex-col max-h-[70svh] overflow-auto">
                 {
                     Array.from({length: 10}).map((_, index) => {
                         return <div className="flex flex-row mb-6" key={index}>
