@@ -1,3 +1,12 @@
+Introduction
+
+Built with ZK email and the Blob, The Ethereum Dispatch creates a digital space for pop up cities to dispatch information securely and accessibly amongst the community.
+
+
+
+
+
+Tech Stack
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
