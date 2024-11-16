@@ -31,33 +31,33 @@ export default function Chat() {
 
     const clientRef = useRef<Client | null>(null)
 
-    useEffect(() => {
-        ;(async () => {
-            try {
-                if (address && typeof window !== 'undefined') {
-                    const signer: Signer = {
-                        getAddress: async () => address,
-                        signMessage: async (message: string) => {
-                            const signature = await signMessageAsync({message, account: address})
-                            return toBytes(signature)
-                        }
-                    }
+    // useEffect(() => {
+    //     ;(async () => {
+    //         try {
+    //             if (address && typeof window !== 'undefined') {
+    //                 const signer: Signer = {
+    //                     getAddress: async () => address,
+    //                     signMessage: async (message: string) => {
+    //                         const signature = await signMessageAsync({message, account: address})
+    //                         return toBytes(signature)
+    //                     }
+    //                 }
 
-                    const encryptionKey = window.crypto.getRandomValues(new Uint8Array(32))
-                    clientRef.current = await Client.create(
-                        signer,
-                        encryptionKey,
-                        {env: "dev"}
-                    );
-                    console.log('clientRef.current', clientRef.current)
-                    setReady(true)
-                }
-            } catch (e: any) {
-                console.error('create error:', e)
-                setError(e.message)
-            }
-        })()
-    }, [address]);
+    //                 const encryptionKey = window.crypto.getRandomValues(new Uint8Array(32))
+    //                 clientRef.current = await Client.create(
+    //                     signer,
+    //                     encryptionKey,
+    //                     {env: "dev"}
+    //                 );
+    //                 console.log('clientRef.current', clientRef.current)
+    //                 setReady(true)
+    //             }
+    //         } catch (e: any) {
+    //             console.error('create error:', e)
+    //             setError(e.message)
+    //         }
+    //     })()
+    // }, [address]);
 
     return <div className="flex flex-row flex-nowrap w-full h-[100svh] justify-center items-center">
         <div className="w-[360px] bg-white min-h-[500px] rounded p-4">
