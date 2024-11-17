@@ -4,7 +4,7 @@ Built with ZK email and the Blob, The Ethereum Dispatch creates a digital space 
 
 
 
-
+There is some issue on blob storage when deployed to vercel, so we seperate it to https://github.com/catslovefish1/blobs
 
 Tech Stack
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
